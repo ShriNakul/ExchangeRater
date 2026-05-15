@@ -1,0 +1,102 @@
+:root {
+  --primary: #0d6efd;
+  --bg-card: #ffffff;
+  --border-color: #dee2e6;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+.converter-card {
+  background: var(--bg-card);
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.input-group-custom {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.input-group-custom label,
+.select-box label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.currency-input,
+.currency-select {
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.currency-input:focus,
+.currency-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+.conversion-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.select-box {
+  flex: 1;
+  min-width: 0;
+}
+
+.swap-button {
+  flex-shrink: 0;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 2px;
+  transition: 0.3s;
+}
+
+.swap-button:hover {
+  background-color: var(--primary);
+  color: white;
+  transform: rotate(180deg);
+}
+
+.result-display {
+  border-top: 1px solid #edf2f7;
+  padding-top: 1.5rem;
+}
+
+.result-display p {
+  color: #718096;
+  margin: 0;
+}
+
+.result-display h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a202c;
+  margin: 0;
+}

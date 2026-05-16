@@ -35,7 +35,7 @@ function App() {
 
   return (
     <section id="converter-tool" className="container py-5">
-      <h1 className="text-center mb-5">Currency Converter</h1>
+      <h1 className="text-center mb-5">ExchangeRater</h1>
 
       <div className="converter-card">
         <div className="input-group-custom">
